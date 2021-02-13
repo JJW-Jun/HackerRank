@@ -7,18 +7,24 @@ import java.util.Collections;
 import java.util.List;
 
 
-enum Age{
-    TEENAGER("10대"), _20S("20대"), _30S("30대"), _40S("40대"),
-    _50S("50대"), _60S("60대"), OVER_70S("70대이상");
+enum Age {
+    TEENAGER("10s"), _20S("20s"), _30S("30s"), _40S("40s"),
+    _50S("50s"), _60S("60s"), OVER_70S("over70s");
 
     private final String age;
-    Age(String age) { this.age = age; }
-    public String getAge() { return age; }
+
+    Age(String age) {
+        this.age = age;
+    }
+
+    public String getAge() {
+        return age;
+    }
 }
 
 
 public class AgeGenerator {
-    public String randomAgeGenerator(){
+    public String randomAgeGenerator() {
         List<Age> ageList = Arrays.asList(Age.values().clone());
         Collections.shuffle(ageList);
         return ageList.get(0).getAge();

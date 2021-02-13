@@ -1,4 +1,4 @@
-package demo.customerdata;
+package demo.customerdata.personaldata;
 
 import java.util.Arrays;
 import java.util.List;

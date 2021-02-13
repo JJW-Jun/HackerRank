@@ -1,12 +1,9 @@
 package demo;
 
 
-import java.lang.reflect.Array;
-import java.security.MessageDigest;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.util.stream.Collectors;
 
 class Player5 {
 
@@ -14,12 +11,34 @@ class Player5 {
         return now(Clock.systemDefaultZone());
     }
 
+    public Optional<String> makeOptional(String string){
+        Optional<String> optional = Optional.ofNullable(string);
+        return optional;
+    }
+
     public String checkPresentId(String name){
-        Optional<String> checker = Optional.ofNullable(name);
+        Optional<String> checker = makeOptional(name);
         if (checker.isPresent()) {
             return "test".equals(checker.get()) ? "FAILURE" : "SUCCESS";
         }
         return "SUCCESS";
+    }
+
+      void npe () throws NullPointerException, ArithmeticException {
+          System.out.println("NPE");
+
+    }
+
+    void trow(int number){
+        try {
+            if (number == 0) {
+                throw new ArithmeticException("Can't by zero");
+            } else {
+                System.out.println("Good");
+            }
+        }catch(ArithmeticException e){
+            e.printStackTrace();
+        }
     }
 
 
@@ -108,6 +127,9 @@ class Player5 {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy MM dd");
         LocalDate date1 = LocalDate.parse(input, formatter);
 
+        Player5 ttest5 = new Player5();
+        ttest5.npe();
+        ttest5.trow(0);
 
 
 //        System.out.println(localDate1);

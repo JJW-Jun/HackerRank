@@ -2,10 +2,13 @@ package demo.customerdata;
 
 
 import demo.book.javainaction.chapter11.Person;
+import demo.study.Calculator;
+import org.junit.Rule;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import org.hamcrest.CoreMatchers.*;
+import org.junit.rules.ExpectedException;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -19,27 +22,91 @@ import java.util.stream.IntStream;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class TestCode {
-    public static void main(String args []){
+    public static void main(String args[]) {
 
     }
 
     /**
-    GenderGenerator(성별생성기) : 성별 생성 메서드
-        - manGenerator : 남자 생성
-        - womanGenerator : 여자 생성
-        - randomGenerator : 무작위 생성
-    */
+     * GenderGenerator(성별생성기) : 성별 생성 메서드
+     * - manGenerator : 남자 생성
+     * - womanGenerator : 여자 생성
+     * - randomGenerator : 무작위 생성
+     */
 
     private static List<Person> storage;
+    private static List<Integer> storages;
     static Random random = new Random();
-//    @Rule
-//    public ExpectedException thrown = ExpectedException.none();
 
-    // 에러와 오류의 차이
+
+    // The test method does not have to be public in JUnit5
+    @Test
+    void triangularMinus5() {
+        Calculator calc = new Calculator();
+
+        IllegalArgumentException thrown = assertThrows(
+                IllegalArgumentException.class,
+                () -> calc.divide(42.0, 0.0));
+        // If the exception has not been thrown, the above test has failed.
+        // And now you may further inspect the returned exception...
+        // ...e.g. like this:
+        assertEquals("Divider must not be 0", thrown.getMessage());
+    }
+
+
+
+
 //    @Test
-//    public void 테스트() throws Exception{
+//    void test() throws Exception {
+//        int a = 0;
+//        int b = 3;
+//
+//        double result = b / a;
+//
+//        fail("This is fail test");
+//    }
+
+    @Test
+    void test2() throws Exception {
+        System.out.println("This test must be greatful");
+    }
+
+
+    @Rule
+    public ExpectedException expectedException = ExpectedException.none();
+
+    @Test
+    public void throwsNothing() {
+        // no exception expected, none thrown: passes.
+    }
+
+
+
+
+//    @Test
+//    public void throwsExceptionWithSpecificType() {
+//        expectedException.expect(NullPointerException.class);
+//
+//        throw new NullPointerException();
+//    }
+
+//    @Test
+//    public void throwsExceptionWithSpecificTypeAndMessage() {
+//        expectedException.expect(IllegalArgumentException.class);
+//        expectedException.expectMessage("Wanted a donut.");
+//
+//        throw new IllegalArgumentException("Wanted a donut.");
+//    }
+
+
+    //
+//
+//    @Test
+//    void 테스트() throws Exception {
 //        String k = null;
 //        assertThat("a", is(k.getClass().getName()));
 //
@@ -47,94 +114,134 @@ class TestCode {
 //        assertThat(a, is("c"));
 //    }
 //
+
+    @BeforeAll
+    static void 시작_전() {
+        storages = new ArrayList<>();
+        for (int i = 0; i < 10000000; i++) {
+            storages.add(i);
+        }
+        System.out.println("Test start");
+    }
+
+
+    @Test
+    void for문_테스트() {
+        int count = 0;
+        long start = System.currentTimeMillis();
+        for (int i = 0; i < 10000000; i++) {
+            if (i % 2 == 0 && i%3 == 0 && !(i%6==0)) {
+                ++count;
+            }
+
+        }
+        long end = System.currentTimeMillis();
+        System.out.println("for loop time: " + (end-start));
+
+    }
+
+
+    @Test
+    void 스트림_테스트(){
+        long start = System.currentTimeMillis();
+        int result = (int) storages.stream().filter(i->i%2==0).filter(i->i%3==0).mapToInt(Integer::intValue).count();
+        long end = System.currentTimeMillis();
+
+        System.out.println("stream loop time: "+ (end-start));
+
+    }
+
+    @Test
+    void 스트림_병렬_테스트(){
+        long start = System.currentTimeMillis();
+        int result = (int) storages.stream().parallel().filter(i->i%2==0).filter(i->i%3==0).
+                filter(i->!(i%6==0)).mapToInt(Integer::intValue).count();
+        long end = System.currentTimeMillis();
+
+        System.out.println("parallel stream loop time: "+ (end-start));
+    }
+
     @BeforeAll
     static void 시작메시지_testStartMessage() {
         // TEST_CODE_001
         System.out.println("\"Let's start the test!\"");
-        LocalDateTime start = LocalDateTime.now();
+
         storage = new ArrayList<>();
+        Long start = System.currentTimeMillis();
         for (int i = 0; i < 10000000; i++) {
             Person person = new Person();
             person.setName(String.format("person%s", i));
             person.setAge(random.nextInt(30) + 20);
             storage.add(person);
         }
-        LocalDateTime end = LocalDateTime.now();
-        Duration duration = Duration.between(start, end);
-        System.out.println(duration.getSeconds());
 
-
+        Long end = System.currentTimeMillis();
+        System.out.println((end - start) / 1000);
     }
 
+//    @Test
+//    void 직렬스트림_속도테스트_streamSpeedTest() {
+//        // TEST_CODE_002
+//        long start = System.currentTimeMillis();
+//
+//        IntStream intStream = storage.stream().filter(Person -> Person.getAge() < 30).mapToInt(Person::getAge);
+//        int result = (int) intStream.count();
+//
+//        long end = System.currentTimeMillis();
+//        System.out.println("    Stream time: " + (end - start) + ",  result: " + result);
+//    }
+//
+//    @Test
+//    void for_속도_테스트_streamSpeedTest3() {
+//        // TEST_CODE_003
+//
+//        int count = 0;
+//        long start = System.currentTimeMillis();
+//
+//        for (int j = 0; j < 10000000; j++) {
+//            if (storage.get(j).getAge() < 30) {
+//                ++count;
+//            }
+//        }
+//        long end = System.currentTimeMillis();
+//        System.out.println("    for문 test: " + (end - start) + ",  result: " + count);
+//
+//    }
 
+
+//
+//
     @Test
-    void 직렬스트림_속도테스트_streamSpeedTest() {
-        // TEST_CODE_002
-        Instant startTime = Instant.now();
+    void 병렬스트림_속도_테스트_streamSpeedTest() {
+        // TEST_CODE_004
+
         for (int k = 0; k < 10; k++) {
             Long start = System.currentTimeMillis();
 
-            IntStream intStream = storage.stream().filter(Person -> Person.getAge() < 30).mapToInt(Person::getAge);
+            IntStream intStream = storage.stream().parallel()
+                    .filter(Person -> Person.getAge() < 30).mapToInt(Person::getAge);
             int result = (int) intStream.count();
+
+            Long end = System.currentTimeMillis();
+            System.out.println("    Stream 병렬 1처test: " + (end - start) + ",  result: " + result);
+
+        }
+    }
+
+    @Test
+    void 병렬1스트림_속도_테스트_streamSpeedTest() {
+        //
+        for (int k = 0; k < 10; k++) {
+            Long start = System.currentTimeMillis();
+
+            int result = (int) storage.stream().parallel()
+                    .filter(Person -> Person.getAge() < 30).mapToInt(Person::getAge).count();
 
             Long end = System.currentTimeMillis();
             System.out.println("    Stream test: " + (end - start) + ",  result: " + result);
         }
-
-
     }
-//
-//
-    @Test
-    void for_속도_테스트_streamSpeedTest() {
-        // TEST_CODE_003
-
-        for (int k = 0; k < 10; k++) {
-            int count = 0;
-            Long start = System.currentTimeMillis();
-
-            for (int j = 0; j < 10000000; j++) {
-                if (storage.get(j).getAge() < 30) {
-                    ++count;
-                }
-            }
-
-            Long end = System.currentTimeMillis();
-            System.out.println("    for문 test: " + (end - start) + ",  result: " + count);
-        }
-    }
-//
-//
-//    @Test
-//    void 병렬스트림_속도_테스트_streamSpeedTest() {
-//        // TEST_CODE_004
-//
-//        for (int k = 0; k < 10; k++) {
-//            Long start = System.currentTimeMillis();
-//
-//            IntStream intStream = storage.stream().parallel()
-//                    .filter(Person -> Person.getAge() < 30).mapToInt(Person::getAge);
-//            int result = (int) intStream.parallel().count();
-//
-//            Long end = System.currentTimeMillis();
-//            System.out.println("    Stream 병렬 1처test: " + (end - start) + ",  result: " + result);
-//        }
-//    }
-//
-//
-//    @Test
-//    void 병렬1스트림_속도_테스트_streamSpeedTest() {
-//        //
-//        for (int k = 0; k < 10; k++) {
-//            Long start = System.currentTimeMillis();
-//
-//            int result = (int) storage.stream().parallel()
-//                    .filter(Person -> Person.getAge() < 30).mapToInt(Person::getAge).count();
-//
-//            Long end = System.currentTimeMillis();
-//            System.out.println("    Stream test: " + (end - start) + ",  result: " + result);
-//        }
-//    }
+}
 //
 //
 //    @Test
@@ -246,4 +353,3 @@ class TestCode {
 //
 //    }
 
-}
