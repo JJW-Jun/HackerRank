@@ -180,18 +180,6 @@ class TestCode {
     }
 
 //    @Test
-//    void 직렬스트림_속도테스트_streamSpeedTest() {
-//        // TEST_CODE_002
-//        long start = System.currentTimeMillis();
-//
-//        IntStream intStream = storage.stream().filter(Person -> Person.getAge() < 30).mapToInt(Person::getAge);
-//        int result = (int) intStream.count();
-//
-//        long end = System.currentTimeMillis();
-//        System.out.println("    Stream time: " + (end - start) + ",  result: " + result);
-//    }
-//
-//    @Test
 //    void for_속도_테스트_streamSpeedTest3() {
 //        // TEST_CODE_003
 //
