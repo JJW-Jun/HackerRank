@@ -4,6 +4,7 @@ package demo;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.function.Function;
 
 class Player5 {
 
@@ -11,47 +12,122 @@ class Player5 {
         return now(Clock.systemDefaultZone());
     }
 
+    public static Function<String, Optional<String>> checker = x->Optional.ofNullable(x);
+
     public Optional<String> makeOptional(String string){
         Optional<String> optional = Optional.ofNullable(string);
         return optional;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // 아이디를 체크할때랑 회원아이디 중복체크할때
+    // 셋 다 확장성 면에서는 일단 최악인 거네요.
+    //
+
+    List<Person> l = new ArrayList<>();
+
+    // 1-1.아이디 체크 : OCP 에는 위배된다.
+    public String checkId(String id) {
+        Optional<String> checker = Optional.ofNullable(id);
+        if (checker.isPresent()) {
+            return (l.stream().anyMatch(Person -> Person.getName()
+                    .contains(checker.get()))) ? "ok" : "no";
+        }
+        return "올바른 회원을 입력하세요";
+    }
+
+
+    // 1-2.비밀번호 체크
+    public String checkPassword(String password) {
+        Optional<String> checker = Optional.ofNullable(password);
+        if (checker.isPresent()) {
+            return (l.stream().anyMatch(Person -> Person.getName()
+                    .equals(checker.get()))) ? "올바른 비밀번호 입니다." : "아니다";
+        }
+        return "양식이 다른 비밀번호입니다.";
+    }
+//    List<Person> al = new List<Person>();
+//
+//    public void test() {
+//        List<?> items = new ArrayList<>();
+//        for (String item : items) {
+//
+//        }
+//    }
+
+
+
+
+    // 제네릭이 되면 T타입으로 하면 T하면 이 자리에다가
+    // 확장성 면에서 구리다.
+    // 람다 자체가 단일성.
+
+    Function<String, Optional<String>> nullChecker = x -> Optional.ofNullable(x);
+
+    public String checkId2(String id) {
+        if (nullChecker.apply(id).isPresent()) {
+            return (l.stream().anyMatch(Person -> Person.getName()
+                    .contains(nullChecker.apply(id).get()))) ? "ok" : "no";
+        }
+        return "올바른 회원을 입력하세요";
+    }
+
+
+    // 2-2.비밀번호 체크
+    public String checkPassword2(String password) {
+        if (opnalChecker.apply(password).isPresent()) {
+            return (l.stream().anyMatch(Person -> Person.getName()
+                    .equals(opnalChecker.apply(password).get()))) ? "올바른 비밀번호 입니다." : "아니다";
+        }
+        return "양식이 다른 비밀번호입니다.";
+    }
+
+
+
+    // 3-1. 모듈성 체크
     public String checkPresentId(String name){
         Optional<String> checker = makeOptional(name);
         if (checker.isPresent()) {
-            return "test".equals(checker.get()) ? "FAILURE" : "SUCCESS";
+            return name.equals(checker.get()) ? "FAILURE" : "SUCCESS";
         }
         return "SUCCESS";
     }
-
-      void npe () throws NullPointerException, ArithmeticException {
-          System.out.println("NPE");
-
-    }
-
-    void trow(int number){
-        try {
-            if (number == 0) {
-                throw new ArithmeticException("Can't by zero");
-            } else {
-                System.out.println("Good");
-            }
-        }catch(ArithmeticException e){
-            e.printStackTrace();
-        }
-    }
+    // 들어오는 값을 널체크를 하고 그냥 같은지 비교해서 문자를 리턴하는 건데 음.. 조금 저질코드같아요 느낌상
+    // 변경에 유연하려면 캡슈ㅜㄹ화로 싸야하는데 캡슐화가아니라 값이 다이렉트로 들어와서
 
 
 
 
 
-    public String checkId(String id){
-        Optional<String> checker = Optional.ofNullable(id);
-        if(checker.isPresent()){
+//      void npe () throws NullPointerException, ArithmeticException {
+//          System.out.println("NPE");
+//
+//    }
+//
+//    void trow(int number){
+//        try {
+//            if (number == 0) {
+//                throw new ArithmeticException("Can't by zero");
+//            } else {
+//                System.out.println("Good");
+//            }
+//        }catch(ArithmeticException e){
+//            e.printStackTrace();
+//        }
+//    }
 
-        }
-        return "d";
-    }
 
 
 
@@ -110,8 +186,7 @@ class Player5 {
         YearMonth date = YearMonth.of(1991, 3);
         YearMonth yearMonth = YearMonth.now();
         System.out.println(yearMonth.plusMonths(13));
-//        MonthDay monthDay = MonthDay.of(3, 32);
-//        System.out.println(monthDay);
+
 
         LocalTime localTime = LocalTime.now();
         System.out.println(localTime);
@@ -123,31 +198,10 @@ class Player5 {
         String month = "03";
         String day = "14";
 
-        String input = year+" "+month+" "+day;
+        String input = year + " " + month + " " + day;
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy MM dd");
         LocalDate date1 = LocalDate.parse(input, formatter);
-
-        Player5 ttest5 = new Player5();
-        ttest5.npe();
-        ttest5.trow(0);
-
-
-//        System.out.println(localDate1);
-//        System.out.println(localDate);
-
-
-
-
-
-
-
     }
-
-
-
-    // 메서드는 선언부만 알면 호출가능하므로 추상메서드도 호출 가능.
-
-    // 상속해서 완성했을 때 호출가능
 
 
 
