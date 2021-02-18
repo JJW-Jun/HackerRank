@@ -14,7 +14,7 @@ enum WeekorWeekend{
     String weekOrWeekend;
     List<DayOfTheWeek> weekorWeekendList;
 
-    WeekorWeekend(String weekOrWeekend, List<DayOfTheWeek> weekOrWeekendList){
+    WeekorWeekend(String weekOrWeekend, List<DayOfTheWeek> weekOrWeekendList) {
         this.weekOrWeekend = weekOrWeekend;
         this.weekorWeekendList = weekOrWeekendList;
     }
@@ -26,8 +26,14 @@ enum DayOfTheWeek{
     FRIDAY("금요일"), SATURDAY("토툐일"), SUNDAY("일요일");
 
     private final String dayOfTheWeek;
-    DayOfTheWeek(String dayOfTheWeek){this.dayOfTheWeek = dayOfTheWeek;}
-    public String getDayOfTheWeek() { return dayOfTheWeek;}
+
+    DayOfTheWeek(String dayOfTheWeek) {
+        this.dayOfTheWeek = dayOfTheWeek;
+    }
+
+    public String getDayOfTheWeek() {
+        return dayOfTheWeek;
+    }
 }
 
 public class DayOfTheWeekGenerator {
