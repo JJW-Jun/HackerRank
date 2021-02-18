@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0139bdd-5478-4f0c-bee9-e15b68e5bcca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/demo/study/TimeTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/A.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/Player5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/customerdata/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/customerdata/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/customerdata/ShoppingTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/customerdata/ShoppingTime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Pagenation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/Pagenation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Test6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/js/section5/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/js/section5/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/Ttest5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/Ttest5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/customerdata/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/customerdata/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/customerdata/ShoppingTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/customerdata/ShoppingTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/customerdata/webdatagenerator/DayOfTheWeekGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/customerdata/webdatagenerator/DayOfTheWeekGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/study/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/study/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/study/Test6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/study/Paginations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/section5/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/section5/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt copy 2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/txt copy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/A.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/A.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +234,7 @@
       <workItem from="1613553243835" duration="3326000" />
       <workItem from="1613565729848" duration="14682000" />
       <workItem from="1613622860623" duration="2293000" />
-      <workItem from="1613646267484" duration="3693000" />
+      <workItem from="1613646267484" duration="4658000" />
     </task>
     <servers />
   </component>
