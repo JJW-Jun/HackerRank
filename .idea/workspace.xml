@@ -5,7 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0139bdd-5478-4f0c-bee9-e15b68e5bcca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/demo/customerdata/webdatagenerator/Season.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo/regex/practice/Practice1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo/study/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo/study/Tesssst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo/study/generic/code/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo/study/generic/code/GenericCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo/study/generic/code/GenericContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo/study/generic/code/GenericInterFace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo/study/generic/code/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo/study/generic/link" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/customerdata/DataGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/customerdata/DataGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/customerdata/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/customerdata/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/customerdata/ShoppingTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/customerdata/ShoppingTime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/customerdata/personaldata/Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/customerdata/personaldata/Gender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/customerdata/personaldata/GenderGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/customerdata/personaldata/GenderGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/customerdata/webdatagenerator/BouncePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/customerdata/webdatagenerator/BouncePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/customerdata/webdatagenerator/BouncePageGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/customerdata/webdatagenerator/BouncePageGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/customerdata/webdatagenerator/DayOfTheWeek.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/customerdata/webdatagenerator/DayOfTheWeek.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/customerdata/webdatagenerator/DayOfTheWeekGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/customerdata/webdatagenerator/DayOfTheWeekGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/DoYun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Paginations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/Paginations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/TimeTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/TimeTime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/js/A.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/js/A.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/Ttest5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/Ttest5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/customerdata/DataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/customerdata/DataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/customerdata/ShoppingTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/customerdata/ShoppingTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/customerdata/personaldata/GenderGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/customerdata/personaldata/GenderGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/customerdata/webdatagenerator/BouncePageGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/customerdata/webdatagenerator/BouncePageGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/study/TimeTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/study/TimeTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/A.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/A.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +48,7 @@
         <option value="JUnit5 Test Class" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -106,9 +136,22 @@
       <recent name="demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Member">
-    <configuration name="Member" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.customerdata.Member" />
+  <component name="RunManager" selected="Application.Practice1">
+    <configuration name="GenericCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.study.generic.code.GenericCode" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.study.generic.code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MonthGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.customerdata.MonthGenerator" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -120,12 +163,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Paginations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.study.Paginations" />
+    <configuration name="Player5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.Player5" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.study.*" />
+          <option name="PATTERN" value="demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,12 +176,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoppingTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.customerdata.ShoppingTime" />
+    <configuration name="Practice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.regex.practice.Practice1" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.customerdata.*" />
+          <option name="PATTERN" value="demo.regex.practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,8 +189,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TimeTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.study.TimeTime" />
+    <configuration name="Tesssst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.study.Tesssst" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -170,28 +213,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="demo.customerdata.personaldata.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="demo.customerdata" />
-      <option name="MAIN_CLASS_NAME" value="demo.customerdata.TestCode" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Member" />
-        <item itemvalue="Application.Paginations" />
-        <item itemvalue="Application.TimeTime" />
-        <item itemvalue="Application.ShoppingTime" />
-        <item itemvalue="JUnit.TestCode" />
+        <item itemvalue="Application.Practice1" />
+        <item itemvalue="Application.Tesssst" />
+        <item itemvalue="Application.Player5" />
+        <item itemvalue="Application.GenericCode" />
+        <item itemvalue="Application.MonthGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +262,7 @@
       <workItem from="1613553243835" duration="3326000" />
       <workItem from="1613565729848" duration="14682000" />
       <workItem from="1613622860623" duration="2293000" />
-      <workItem from="1613646267484" duration="4658000" />
+      <workItem from="1613646267484" duration="27868000" />
     </task>
     <servers />
   </component>

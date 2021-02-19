@@ -11,13 +11,18 @@ enum Gender {
     private final int genderCode;
     private final String gender;
 
-        Gender(int genderCode, String gender) {
-            this.genderCode = genderCode;
-            this.gender = gender;
-        }
+    Gender(int genderCode, String gender) {
+        this.genderCode = genderCode;
+        this.gender = gender;
+    }
 
-        public int getGenderCode() { return genderCode; }
-        public String getGender() { return gender; }
+    public int getGenderCode() {
+        return genderCode;
+    }
+
+    public String getGender() {
+        return gender;
+    }
 }
 
 
