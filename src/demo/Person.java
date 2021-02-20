@@ -5,9 +5,7 @@ public class Person {
     int age;
     int height;
 
-    public String getName() {
-        return name;
-    }
+
 
     public void setName(String name) {
         this.name = name;

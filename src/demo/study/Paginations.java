@@ -34,6 +34,7 @@ public class Paginations {
     // https://velog.io/@minsangk/%EC%BB%A4%EC%84%9C-%EA%B8%B0%EB%B0%98-%ED%8E%98%EC%9D%B4%EC%A7%80%EB%84%A4%EC%9D%B4%EC%85%98-Cursor-based-Pagination-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0
     // https://semtax.tistory.com/77
     // https://doublesprogramming.tistory.com/100
+
     List<Member> memberList = new ArrayList<>();
 
     private int prevPagge;                                                  // 이전 페이지
@@ -41,16 +42,17 @@ public class Paginations {
     private boolean hasPrev;                                                // 이전 블럭의 유무
     private boolean hasNext;                                                // 다음 블럭의 유무
 
-    private int currentPage;                                                // 현재 페이지
-    private int currentBlock;                                               // 현재 블록
-    private int currentPageNumberInBlock;                                   // 현재 블럭에서 페이지 위치
 
-
-    private int pageStartNumber;                                            // 페이지
-    private int pageLastNumber;
-    private int blockStartNumber;                                           // 현재 페이지 블럭 시작 번호
-    private int blockEndNumber;                                             // 현재 페이지 블럭 끝 번호
+    private int currentPage;                                                // 현재 게시물의 페이지 위치
+    private int currentBlock;                                               // 현재 게시물의 블록 위치
+    private int currentPageNumberInBlock;                                   // 현재 게시물의 블럭에서 페이지 위치
+    private int blockEndNumber;                                             // 현재 게시물의 페이지 블럭 끝 번호
     private int lastBlockNum;                                               // 블럭 마지막 번호
+
+    private int pageStartNumber;                                            // 페이지 시작 번호
+    private int pageLastNumber;                                             // 페이지 마지막 번호
+    private int blockStartNumber;                                           // 현재 페이지 블럭 시작 번호
+
 
     private int totalPostCount;                                             // 전체 게시물 개수
     private int totalPageCount;                                             // 전체 페이지 개수
@@ -69,8 +71,9 @@ public class Paginations {
 //    int endBlockNumber;                                                   // 마지막 페이지일 경우, 아닐 경우
 //    int currentPageNumberInBlock = (currentPage - startBlockNumber) + 1;  // 블럭 위치
 
+
     // 1.생성자
-    Paginations(Integer pagePerBlock, Integer postPerPage, Integer totalPostCount) {
+    Paginations(int pagePerBlock, int postPerPage, int totalPostCount) {
         this.pagePerBlock = pagePerBlock;
         this.postPerPage = postPerPage;
         this.totalPostCount = totalPostCount;
@@ -103,10 +106,41 @@ public class Paginations {
     }
 
 
-    public void makeCalc() {
-        currentBlock = (int) Math.ceil((currentPage - 1) / Pagenation.POST_PER_PAGE.getPageSzie() + 1);
-        blockStartNumber = (currentBlock - 1) * Pagenation.BLOCK_SIZE.getPageSzie();
-        blockEndNumber = blockStartNumber * Pagenation.BLOCK_SIZE.getPageSzie() - 1;
+
+    // 내 게시물이 몇 번째 게시물인지, 그게 몇 번째 페이지, 블록에 있는지
+    public void pageInfo(int currentPost) {
+
+        // 몇 번째 페이지에 있는지
+        int currentPage = (int) Math.ceil((currentPost - 1) / Pagenation.POST_PER_PAGE.getPageSzie() + 1);
+
+        // 전체 블럭의 갯수
+        int totalBlockCount = (int) (totalPostCount / postPerPage * pagePerBlock);
+
+        // 어느 블록에 있는지
+        int currentBlock = (int) totalPostCount / Pagenation.POST_PER_PAGE.getPageSzie();
+
+        // 블록의 시작 번호는 무엇인지
+        int blockStartNumber = (currentBlock - 1) * Pagenation.BLOCK_SIZE.getPageSzie();
+
+        // 블록의 끝 번호는 무엇인지
+        int blockEndNumber = blockStartNumber * Pagenation.BLOCK_SIZE.getPageSzie() - 1;
+    }
+
+
+    public boolean hasPrev(int totalPostCount) {
+        return (pageStartNumber == 1) ? false : true;
+    }
+
+    public boolean hasNext(int totalPostCount) {
+        return (pageLastNumber > totalPageCount) ? false : true;
+    }
+
+
+
+
+
+        public void test(){
+
 
         if (blockEndNumber > totalPageCount) {
             blockEndNumber = totalPostCount;
@@ -114,19 +148,11 @@ public class Paginations {
 
         prevPagge = (currentPage == 1) ? 1 : (currentBlock - 1) * Pagenation.BLOCK_SIZE.getPageSzie();
 
-        hasPrev = (pageStartNumber == 1) ? false : true;
-        hasNext = (pageLastNumber > totalPageCount) ? false : true;
-
-
         int startBlockNumber = ((currentBlock - 1) * pagePerBlock) - 7;
         currentPageNumberInBlock = (currentPage - startBlockNumber) + 1;
     }
 
-//    public void setPage() {
-//        pageStartNumber = (currentPage - 1) * Pagenation.PAGE_SIZE.getPageSzie() + 1;
-//        pageEndNumber = (pageStartNumber + Pagenation.PAGE_SIZE.getPageSzie() - 1);
-//
-//    }
+
 
 
     // 3.마지막 페이지 설정(게시물의 개수에 따른)
