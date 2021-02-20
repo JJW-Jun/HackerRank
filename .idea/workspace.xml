@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0139bdd-5478-4f0c-bee9-e15b68e5bcca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/demo/regex/practice/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demo/regex/practice/Practice2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/section5/checkbox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/customerdata/PaymentMethod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/customerdata/PaymentMethodGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/customerdata/personaldata/Age.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/customerdata/personaldata/Age.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/customerdata/personaldata/AgeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/customerdata/personaldata/AgeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Practice1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Practice1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Paginations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/Paginations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/regex/practice/Practice1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/regex/practice/Practice1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/study/Paginations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/study/Paginations.java" afterDir="false" />
-    </list>
+    <list default="true" id="e0139bdd-5478-4f0c-bee9-e15b68e5bcca" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -185,17 +170,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Practice2" />
@@ -246,6 +220,7 @@
       <workItem from="1613565729848" duration="14682000" />
       <workItem from="1613622860623" duration="2293000" />
       <workItem from="1613646267484" duration="58351000" />
+      <workItem from="1613807153723" duration="16000" />
     </task>
     <servers />
   </component>
