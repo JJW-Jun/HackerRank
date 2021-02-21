@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0139bdd-5478-4f0c-bee9-e15b68e5bcca" name="Default Changelist" comment="" />
+    <list default="true" id="e0139bdd-5478-4f0c-bee9-e15b68e5bcca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Practice2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Practice2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Example.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/Example.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Java/demo/DfsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Java/demo/customerdata/CityNameTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Java/demo/customerdata/FlowPathGeneratorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Java/demo/customerdata/TestCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Java/demo/customerdata/TestCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/regex/practice/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/regex/practice/Practice2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/study/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/study/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/study/Paginations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/study/Paginations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/demo/customerdata/CityNameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/demo/customerdata/CityNameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/demo/customerdata/TestCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/demo/customerdata/TestCode.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -70,6 +87,10 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -87,7 +108,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -104,26 +125,13 @@
       <recent name="demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Practice2">
-    <configuration name="GenericCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.study.generic.code.GenericCode" />
+  <component name="RunManager" selected="JUnit.CityNameTest.values">
+    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.study.Example" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.study.generic.code.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Player5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.Player5" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="demo.*" />
+          <option name="PATTERN" value="demo.study.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,26 +165,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tesssst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.study.Tesssst" />
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CityNameTest.테스트1_" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.study.*" />
+          <option name="PATTERN" value="demo.customerdata.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="demo.customerdata" />
+      <option name="MAIN_CLASS_NAME" value="demo.customerdata.CityNameTest" />
+      <option name="METHOD_NAME" value="테스트1_" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CityNameTest.values" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.customerdata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="demo.customerdata" />
+      <option name="MAIN_CLASS_NAME" value="demo.customerdata.CityNameTest" />
+      <option name="METHOD_NAME" value="values" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CityNameTest.values" />
+        <item itemvalue="JUnit.CityNameTest.테스트1_" />
         <item itemvalue="Application.Practice2" />
+        <item itemvalue="Application.Example" />
         <item itemvalue="Application.Practice1" />
-        <item itemvalue="Application.Tesssst" />
-        <item itemvalue="Application.Player5" />
-        <item itemvalue="Application.GenericCode" />
       </list>
     </recent_temporary>
   </component>
@@ -221,6 +261,8 @@
       <workItem from="1613622860623" duration="2293000" />
       <workItem from="1613646267484" duration="58351000" />
       <workItem from="1613807153723" duration="16000" />
+      <workItem from="1613807226320" duration="1348000" />
+      <workItem from="1613844567951" duration="228000" />
     </task>
     <servers />
   </component>

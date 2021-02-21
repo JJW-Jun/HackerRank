@@ -49,7 +49,7 @@ public class Practice2 {
         String keyword = "가은";
         String search = "^[가-힣\\s]+";
         // *의 의미
-        String searchEngine = String.format("^[가-힣\\s]?[%s\\s][가-힣\\s]?$", keyword);
+        String searchEngine = String.format("^[가-힣\\s]?%s\\s[가-힣\\s]?$", keyword);
         Predicate<String> searchPattern = Pattern.compile(searchEngine).asPredicate();
 
         // 이름검색

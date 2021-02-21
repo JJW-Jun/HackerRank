@@ -2,29 +2,13 @@ package demo.customerdata;
 
 
 import demo.book.javainaction.chapter11.Person;
-import demo.study.Calculator;
-import org.junit.Rule;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import org.hamcrest.CoreMatchers.*;
-import org.junit.rules.ExpectedException;
-
-import java.time.Duration;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.IntStream;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class TestCode {
     private static List<Person> storage;
@@ -43,6 +27,7 @@ class TestCode {
             person.setName(String.format("person%s", i));
             person.setAge(random.nextInt(30) + 20);
             storage.add(person);
+
         }
     }
 

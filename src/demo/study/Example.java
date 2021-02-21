@@ -1,8 +1,5 @@
 package demo.study;
-import org.junit.jupiter.api.Test;
 
-import java.util.Random.*;
-import static org.hamcrest.CoreMatchers.*;
 
 public class Example{
     String name;

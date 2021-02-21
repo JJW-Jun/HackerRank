@@ -1,18 +1,10 @@
 package demo.study;
 
 
-import demo.algorithm.map_.Entry;
 import demo.customerdata.Member;
-import org.boon.core.Sys;
-import org.boon.primitive.Int;
-import org.yaml.snakeyaml.events.MappingEndEvent;
 
 import java.time.LocalDate;
 import java.util.*;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 enum Pagenation {
     POST_PER_PAGE(10),
@@ -138,18 +130,24 @@ public class Paginations {
 
 
 
+        public void prevePage(){
 
-        public void test(){
-
-
+        if(hasPrev)
         if (blockEndNumber > totalPageCount) {
             blockEndNumber = totalPostCount;
         }
+
 
         prevPagge = (currentPage == 1) ? 1 : (currentBlock - 1) * Pagenation.BLOCK_SIZE.getPageSzie();
 
         int startBlockNumber = ((currentBlock - 1) * pagePerBlock) - 7;
         currentPageNumberInBlock = (currentPage - startBlockNumber) + 1;
+    }
+
+    public void nextPage(){
+        if(hasNext){
+
+        }
     }
 
 
