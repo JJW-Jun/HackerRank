@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0139bdd-5478-4f0c-bee9-e15b68e5bcca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Practice1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Practice1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Practice2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Practice2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Example.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/Example.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Java/demo/DfsTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Java/demo/customerdata/CityNameTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Java/demo/customerdata/FlowPathGeneratorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Java/demo/customerdata/TestCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Java/demo/customerdata/TestCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Pagenation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/Pagenation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Paginations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/Paginations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/regex/practice/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/regex/practice/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/regex/practice/Practice1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/regex/practice/Practice1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/demo/regex/practice/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/regex/practice/Practice2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/study/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/study/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/study/Paginations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/study/Paginations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/demo/customerdata/CityNameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/demo/customerdata/CityNameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/demo/customerdata/TestCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/demo/customerdata/TestCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +104,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -125,7 +121,7 @@
       <recent name="demo" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CityNameTest.values">
+  <component name="RunManager" selected="Application.Practice2">
     <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.study.Example" />
       <module name="Java" />
@@ -212,9 +208,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Practice2" />
         <item itemvalue="JUnit.CityNameTest.values" />
         <item itemvalue="JUnit.CityNameTest.테스트1_" />
-        <item itemvalue="Application.Practice2" />
         <item itemvalue="Application.Example" />
         <item itemvalue="Application.Practice1" />
       </list>
@@ -262,7 +258,9 @@
       <workItem from="1613646267484" duration="58351000" />
       <workItem from="1613807153723" duration="16000" />
       <workItem from="1613807226320" duration="1348000" />
-      <workItem from="1613844567951" duration="228000" />
+      <workItem from="1613844567951" duration="994000" />
+      <workItem from="1613993048521" duration="175000" />
+      <workItem from="1613993698264" duration="999000" />
     </task>
     <servers />
   </component>

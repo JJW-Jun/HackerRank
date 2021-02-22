@@ -1,7 +1,5 @@
 package demo.regex.practice;
 
-import org.codehaus.jackson.map.util.Comparators;
-
 public class Customer {
     String name;
     int age;
@@ -20,7 +18,7 @@ public class Customer {
         return date;
     }
 
-    public void setDatee(String datee) {
+    public void setDate(String datee) {
         this.date = datee;
     }
 

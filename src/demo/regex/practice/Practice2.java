@@ -21,44 +21,50 @@ public class Practice2 {
         List<Customer> personList = new ArrayList<>();
         Customer customer = new Customer();
         customer.setName("금정원");
-        customer.setDatee(String.format("%s", (LocalDate.of(2010, 10, 11))));
+        customer.setDate(String.format("%s", (LocalDate.of(2010, 10, 11))));
         personList.add(customer);
 
         Customer customer1 = new Customer();
         customer1.setName("가은선");
-        customer1.setDatee(String.format("%s", (LocalDate.of(2070, 10, 11))));
+        customer1.setDate(String.format("%s", (LocalDate.of(2070, 10, 11))));
         personList.add(customer1);
 
         Customer customer2 = new Customer();
         customer2.setName("정가은");
-        customer2.setDatee(String.format("%s", (LocalDate.of(2017, 10, 11))));
+        customer2.setDate(String.format("%s", (LocalDate.of(2017, 10, 11))));
         personList.add(customer2);
 
         Customer customer3 = new Customer();
         customer3.setName("윤가은");
-        customer3.setDatee(String.format("%s", (LocalDate.of(2010, 8, 11))));
+        customer3.setDate(String.format("%s", (LocalDate.of(2010, 8, 11))));
         personList.add(customer3);
 
         Customer customer4 = new Customer();
         customer4.setName("김가은");
-        customer4.setDatee(String.format("%s", (LocalDate.of(2043, 10, 11))));
+        customer4.setDate(String.format("%s", (LocalDate.of(2043, 10, 11))));
         personList.add(customer4);
 
 
 
-        String keyword = "가은";
-        String search = "^[가-힣\\s]+";
-        // *의 의미
-        String searchEngine = String.format("^[가-힣\\s]?%s\\s[가-힣\\s]?$", keyword);
-        Predicate<String> searchPattern = Pattern.compile(searchEngine).asPredicate();
 
-        // 이름검색
-        List<Customer> test33 = personList.stream()
-                .filter(Customer->searchPattern.test(Customer.getName())).collect(Collectors.toList());
+//
+//        String keyword = "가은";
+//        String search = "^[가-힣\\s]+";
+//        // *의 의미
+//        String searchEngine = String.format("^[가-힣\\s]?%s\\s[가-힣\\s]?$", keyword);
+//        Predicate<String> searchPattern = Pattern.compile(searchEngine).asPredicate();
+//
+//        // 이름검색
+//        List<Customer> test33 = personList.stream()
+//                .filter(Customer->searchPattern.test(Customer.getName())).collect(Collectors.toList());
+        List<Customer> test44 = personList.stream().sorted(Comparator.comparing(Customer::getDate).reversed())
+                .collect(Collectors.toList());
 
-        System.out.println(test33.size());
-        for (int i=0; i<test33.size(); i++){
-            System.out.println(test33.get(i));
+
+
+        System.out.println(test44.size());
+        for (int i=0; i<test44.size(); i++){
+            System.out.println(test44.get(i));
         }
 
 //

@@ -1,11 +1,11 @@
 package demo.regex.practice;
 
-import demo.Person;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.chrono.ChronoLocalDateTime;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
 import java.util.function.Predicate;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -81,27 +81,27 @@ public class Practice1 {
         List<Customer> personList = new ArrayList<>();
         Customer customer = new Customer();
         customer.setName("금정원");
-        customer.setDatee(String.format("%s", (LocalDate.of(2010, 10, 11))));
+        customer.setDate(String.format("%s", (LocalDate.of(2010, 10, 11))));
         personList.add(customer);
 
         Customer customer1 = new Customer();
         customer1.setName("가은선");
-        customer1.setDatee(String.format("%s", (LocalDate.of(2070, 10, 11))));
+        customer1.setDate(String.format("%s", (LocalDate.of(2070, 10, 11))));
         personList.add(customer1);
 
         Customer customer2 = new Customer();
         customer2.setName("정가은");
-        customer2.setDatee(String.format("%s", (LocalDate.of(2017, 10, 11))));
+        customer2.setDate(String.format("%s", (LocalDate.of(2017, 10, 11))));
         personList.add(customer2);
 
         Customer customer3 = new Customer();
         customer3.setName("윤가은");
-        customer3.setDatee(String.format("%s", (LocalDate.of(2010, 8, 11))));
+        customer3.setDate(String.format("%s", (LocalDate.of(2010, 8, 11))));
         personList.add(customer3);
 
         Customer customer4 = new Customer();
         customer4.setName("정가은");
-        customer4.setDatee(String.format("%s", (LocalDate.of(2043, 10, 11))));
+        customer4.setDate(String.format("%s", (LocalDate.of(2043, 10, 11))));
         personList.add(customer4);
 
         // foreach의 경우 notnull 지정.
