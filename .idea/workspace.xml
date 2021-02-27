@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0139bdd-5478-4f0c-bee9-e15b68e5bcca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/demo/algorithm/QuickSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Practice1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Practice1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Practice2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/regex/practice/Practice2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Pagenation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/Pagenation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Paginations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/Paginations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/regex/practice/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/regex/practice/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/regex/practice/Practice1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/regex/practice/Practice1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/regex/practice/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/regex/practice/Practice2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,15 +154,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -261,11 +252,25 @@
       <workItem from="1613844567951" duration="994000" />
       <workItem from="1613993048521" duration="175000" />
       <workItem from="1613993698264" duration="999000" />
+      <workItem from="1614090129736" duration="116000" />
+      <workItem from="1614091343350" duration="17000" />
+      <workItem from="1614435710063" duration="64000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
