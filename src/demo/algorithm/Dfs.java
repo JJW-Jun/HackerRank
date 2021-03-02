@@ -1,4 +1,4 @@
-package demo;
+package demo.algorithm;
 
 import demo.customerdata.personaldata.CityGenerator;
 

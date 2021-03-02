@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0139bdd-5478-4f0c-bee9-e15b68e5bcca" name="Default Changelist" comment="" />
+    <list default="true" id="e0139bdd-5478-4f0c-bee9-e15b68e5bcca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/Dfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/algorithm/Dfs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/DfsStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/algorithm/DfsStack.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,15 +155,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -254,6 +256,8 @@
       <workItem from="1614090129736" duration="116000" />
       <workItem from="1614091343350" duration="17000" />
       <workItem from="1614435710063" duration="409000" />
+      <workItem from="1614522826771" duration="505000" />
+      <workItem from="1614610267081" duration="628000" />
     </task>
     <servers />
   </component>
@@ -270,6 +274,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
