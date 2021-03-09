@@ -1,4 +1,4 @@
-package demo.study;
+package demo.algorithm;
 
 import java.util.*;
 
