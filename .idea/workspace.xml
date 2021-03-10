@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0139bdd-5478-4f0c-bee9-e15b68e5bcca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/demo/regex/practice/Practice3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/regex/practice/Practice3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,17 +154,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CityNameTest.테스트1_" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java" />
       <extension name="coverage">
@@ -258,7 +248,8 @@
       <workItem from="1614610267081" duration="628000" />
       <workItem from="1614696968647" duration="697000" />
       <workItem from="1615214767151" duration="40000" />
-      <workItem from="1615301321444" duration="665000" />
+      <workItem from="1615301321444" duration="700000" />
+      <workItem from="1615387619433" duration="538000" />
     </task>
     <servers />
   </component>
