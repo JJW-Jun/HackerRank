@@ -1,5 +1,7 @@
 package demo.study.generic.code;
 
+import demo.book.javainaction.chapter11.Person;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
