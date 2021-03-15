@@ -8,8 +8,8 @@ import static java.util.stream.Collectors.groupingBy;
 
 public class Practice {
     public static void main(String args[]) {
-        BlogPost blogPost1 = new BlogPost("Sky", "Jun", BlogPostType.GUIDE, 3);
-        BlogPost blogPost2 = new BlogPost("Night", "Kim", BlogPostType.NEWS, 3);
+        BlogPost blogPost1 = new BlogPost("About static method", "Alice", BlogPostType.GUIDE, 3);
+        BlogPost blogPost2 = new BlogPost("Method", "Kim", BlogPostType.NEWS, 3);
         BlogPost blogPost3 = new BlogPost("Sea", "Jane", BlogPostType.REVIEW, 3);
         BlogPost blogPost4 = new BlogPost("Mom", "June", BlogPostType.GUIDE, 3);
         BlogPost blogPost5 = new BlogPost("Father", "Lion", BlogPostType.REVIEW, 3);
@@ -20,8 +20,6 @@ public class Practice {
                 blogPost6, blogPost7, blogPost8);
 
 
-
-        // key에 따른 값 출력
         Map<BlogPostType, List<BlogPost>> postsPerType = posts.stream()
                 .collect(groupingBy(BlogPost::getType));
         System.out.println(postsPerType.get(BlogPostType.GUIDE));
