@@ -5,37 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0139bdd-5478-4f0c-bee9-e15b68e5bcca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/demo/study/StudyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo/study/stream/Practice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/AbstractPlayer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/AudioPlayer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/Dfs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/DfsStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/Player5$Messenger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/Player5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/Print.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/Stack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/TestPractice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/TrueOrFalse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/Ttest3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/AbstTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Bfs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Example.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/ExamplePure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Pagenation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Paginations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Tesssst.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/TimeTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/generic/code/GenericCode$TreeMap$Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/generic/code/GenericCode$TreeMap$Entry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/generic/code/GenericCode$TreeMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/generic/code/GenericCode$TreeMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/generic/code/GenericCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/generic/code/GenericCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/study/Paginations.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/study/generic/code/GenericCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/study/generic/code/GenericCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,6 +154,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CityNameTest.테스트1_" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java" />
       <extension name="coverage">
@@ -281,6 +263,8 @@
       <workItem from="1615387619433" duration="538000" />
       <workItem from="1615715338014" duration="4000" />
       <workItem from="1615715356340" duration="3917000" />
+      <workItem from="1615723074530" duration="40000" />
+      <workItem from="1615818986959" duration="773000" />
     </task>
     <servers />
   </component>
