@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0139bdd-5478-4f0c-bee9-e15b68e5bcca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/demo/study/ThreadPrac.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/StudyThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/StudyThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/ThreadExtends.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/ThreadExtends.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/demo/study/ThreadRunnable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/demo/study/ThreadRunnable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/study/Calculator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/demo/study/stream/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo/study/stream/Practice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,20 +120,7 @@
       <recent name="demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StudyThread">
-    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.study.Example" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="demo.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ThreadPrac">
     <configuration name="Practice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.regex.practice.Practice2" />
       <module name="Java" />
@@ -143,6 +136,19 @@
     </configuration>
     <configuration name="StudyThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.study.StudyThread" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadPrac" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.study.ThreadPrac" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -199,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreadPrac" />
         <item itemvalue="Application.StudyThread" />
         <item itemvalue="Application.Practice2" />
         <item itemvalue="JUnit.CityNameTest.values" />
         <item itemvalue="JUnit.CityNameTest.테스트1_" />
-        <item itemvalue="Application.Example" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +270,7 @@
       <workItem from="1615715338014" duration="4000" />
       <workItem from="1615715356340" duration="3917000" />
       <workItem from="1615723074530" duration="40000" />
-      <workItem from="1615818986959" duration="1279000" />
+      <workItem from="1615818986959" duration="3360000" />
     </task>
     <servers />
   </component>
